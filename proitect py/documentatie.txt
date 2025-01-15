@@ -1,0 +1,126 @@
+### Documentație pentru Convertorul de Greutăți cu Interfață Futuristică
+
+---
+
+#### **Descrierea aplicației**
+Această aplicație permite utilizatorilor să convertească greutăți între diferite unități de măsură (mg, cg, dg, g, dag, hg, kg, t) folosind o interfață modernă și futuristă realizată cu biblioteca `customtkinter`. Aplicația este ușor de utilizat și afișează rezultatele cu precizie ridicată, inclusiv pentru valori foarte mici.
+
+---
+
+### **Cerințe pentru rularea aplicației**
+1. **Python**  
+   - Asigură-te că ai instalat Python (versiunea 3.8 sau mai recentă).  
+   - Dacă nu este instalat, descarcă-l de la [python.org](https://www.python.org/downloads/).
+
+2. **Biblioteci necesare**  
+   - Instalează următoarele biblioteci Python:
+     ```bash
+     pip install customtkinter
+     ```
+
+3. **Structura fișierelor**  
+   Aplicația poate necesita fișiere adiționale pentru personalizare (teme, fonturi etc.). Urmează structura pathway-ului prezentată mai jos.
+
+---
+
+### **Pathway Tree**
+Structura fișierelor necesare pentru rularea aplicației:
+
+```
+proiect py/
+│
+├── main.py                  # Codul principal al aplicației
+├── assets/                   # Resurse adiționale (fonturi, imagini, teme)
+    ├──style.css              # Fisierul CSS care ofera niste stil aplicatiei
+│   ├── futuristic_theme.json # Opțional: temă personalizată pentru customtkinter
+│   └── fonts/               # Fonturi folosite în aplicație
+│       └── Roboto-Regular.ttf
+└── documentatie.txt                # Documentația aplicației
+```
+
+---
+
+### **Ghid de instalare și rulare**
+1. **Descărcare fișiere**  
+   - Creează un folder `WeightConverter` pe sistemul tău.  
+   - Salvează fișierul `main.py` (codul aplicației) în acest folder.  
+   - Opțional: Adaugă fonturi sau teme în subfolderul `assets/`.
+
+2. **Instalare Python**  
+   - Descarcă și instalează Python dacă nu îl ai deja.  
+   - Bifează opțiunea *Add Python to PATH* în timpul instalării.
+
+3. **Instalare biblioteci**  
+   Rulează următoarele comenzi în terminal sau prompt de comandă:
+   ```bash
+   pip install customtkinter
+   ```
+
+4. **Rulare aplicație**  
+   - Navighează în terminal la locația fișierului `main.py`:
+     ```bash
+     cd /calea/spre/WeightConverter
+     ```
+   - Rulează aplicația:
+     ```bash
+     python main.py
+     ```
+
+5. **Interfața aplicației**  
+   - Introdu valoarea în câmpul de intrare.  
+   - Selectează unitățile de măsură din meniurile derulante.  
+   - Apasă butonul **Convertește** pentru a vedea rezultatul afișat.
+
+---
+
+### **Funcționalități cheie**
+1. **Conversie precisă**:
+   - Suportă toate unitățile standard de greutate, de la miligrame (mg) la tone (t).  
+   - Afișează valori foarte mici cu până la 10 zecimale pentru acuratețe.
+
+2. **Interfață modernă**:
+   - Design întunecat, minimalist și intuitiv.  
+   - Elemente responsive și estetică futuristă.
+
+3. **Compatibilitate multiplatformă**:
+   - Funcționează pe Windows, MacOS și Linux, atât timp cât Python și bibliotecile necesare sunt instalate.
+
+---
+
+### **Exemple de utilizare**
+1. **Conversie din kilograme (kg) în miligrame (mg):**
+   - Introdu valoarea: `1`.
+   - Selectează `kg` ca unitate de plecare.
+   - Selectează `mg` ca unitate de destinație.
+   - Apasă **Convertește** și vei obține `1000000.0000`.
+
+2. **Conversie din miligrame (mg) în tone (t):**
+   - Introdu valoarea: `20`.
+   - Selectează `mg` ca unitate de plecare.
+   - Selectează `t` ca unitate de destinație.
+   - Apasă **Convertește** și vei obține `0.0000000200`.
+
+---
+
+### **Depanare**
+1. **Eroare: "ModuleNotFoundError"**  
+   - Asigură-te că ai instalat biblioteca `customtkinter` cu:
+     ```bash
+     pip install customtkinter
+     ```
+
+2. **Probleme cu afișarea fonturilor**  
+   - Verifică dacă fișierul `Roboto-Regular.ttf` este în subfolderul `assets/fonts/`.
+
+3. **Aplicația nu pornește**  
+   - Asigură-te că execuți comanda `python main.py` din folderul corect.
+
+---
+
+### **Extensii posibile**
+1. Adăugarea unui grafic care arată comparațiile vizuale între greutăți.  
+2. Opțiuni pentru salvarea rezultatelor într-un fișier.  
+3. Oferirea unei opțiuni pentru schimbarea temei interfeței (dark/light).
+
+---
+
